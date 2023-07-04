@@ -2,8 +2,8 @@
 function swapTheme(){
 	const element=document.getElementById("app");
 	element.style.color="black";
-	element.className = "night";
+	element.className =element.className == "night"? "day": "night";
 	const btn = document.getElementById("swap");
-	btn.className = "button_night"
+	btn.className = btn.className == "button_night"? "button_day": "button_night"
 	
 }
